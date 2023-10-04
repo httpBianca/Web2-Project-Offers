@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --color1: #26252A;
+    --color2: #C21818;
+}
+
+body{
+    height: 100vh;
+    background-image: url('icons/bg-ofertas.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*---- Menu ----*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #26252A;
+}
+
+header .logo img{
+    height: 80px;
+}
+
+header .logo{
+   display: flex;
+}
+
+header .logo h2{
+    position: relative;
+    top: 20px;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+   display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 30px;
+    color: #a0a0a0;
+}
+
+nav ul li:first-child,
+nav ul li:hover{
+    color: var(--color2);
+    border-bottom: 2px solid var(--color2);
+}
+
+nav button{
+    position: relative;
+    top: 25px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*---- Titulo Principal ----*/
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.text-content{
+    font-size: 1.3rem;
+    margin: 50px;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+
+.text-content span{
+    margin: 10px;
+    font-family: 'Dela Gothic One', cursive;
+    text-transform: uppercase;
+    color: #C21818;
+    border-bottom: 4px dotted black;
+
+}
+
+/*---- Ofertas | Galeria de fotos ----*/
+
+.offers-galery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-main{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;  
+    box-shadow: #C21818 5px 5px 1.5px;
+}
+
+.img-main .p1 {
+    border-radius: 0px 0px 0px 50px;
+}
+
+
+.img-main .p3 {
+    border-radius: 0px 50px 0px 0px;
+}
+
+.icon-add{
+    height: 40px;
+    cursor: pointer;
+}
+
+.info-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2px;
+}
+
+span.tamanho{
+    font-weight: bold;
+    color: #C21818;
+}
+
+.final{
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}
+
+.icons-end{
+    height: 50px;
+    margin: 5px;
+}
